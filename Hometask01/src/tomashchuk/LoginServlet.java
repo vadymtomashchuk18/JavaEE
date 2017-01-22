@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
         if (req.getParameter("Login").equals(user1) && req.getParameter("Pass").equals(pass1))
             resp.getWriter().append("<h3>Welcome!</h3>");
         else {
-            req.setAttribute("error", "Unknown user, please try again");
+            req.setAttribute("error", "Invalid data! try again");
             req.getRequestDispatcher("index.jsp").forward(req, resp);
 
         }
