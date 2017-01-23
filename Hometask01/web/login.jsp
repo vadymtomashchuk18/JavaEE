@@ -13,8 +13,8 @@
 <body>
 
 <form action="Login">
-    <input type="text" name="Login" placeholder="Your login">
-    <input type="password" name="Pass" placeholder="Your password">
+    <input type="text" name="Login" placeholder="Your login"><br>
+    <input type="password" name="Pass" placeholder="Your password"><br>
     <input type="submit">
 
 </form>

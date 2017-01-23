@@ -11,7 +11,8 @@ import java.io.IOException;
  * Created by Вадим on 22.01.2017.
  */
 
-@WebServlet("/")
+//Annotation without web.xml
+//@WebServlet("/")
 public class LoginServlet extends HttpServlet {
 
     private static final String user1 = "Vadik";
@@ -21,7 +22,7 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        req.getRequestDispatcher("login.jsp").forward(req, resp);
     }
 
     @Override
@@ -32,7 +33,7 @@ public class LoginServlet extends HttpServlet {
             resp.getWriter().append("<h3>Welcome!</h3>");
         else {
             req.setAttribute("error", "Invalid data! try again");
-            req.getRequestDispatcher("index.jsp").forward(req, resp);
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
 
         }
     }
