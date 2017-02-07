@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Practice03dependencyInjection:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="Practice03dependencyInjection-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Practice03dependencyInjection:war exploded" />
+    </root>
+  </artifact>
+</component>
