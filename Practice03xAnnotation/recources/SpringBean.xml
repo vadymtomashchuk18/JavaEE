@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
+    <context:annotation-config/>
+
+    <!--
     <bean id="product1" class="com.tomashchuk.main.Product">
         <constructor-arg value="IceCream"></constructor-arg>
         <constructor-arg value="banana"></constructor-arg>
@@ -16,16 +20,20 @@
         <constructor-arg value="IceCream"></constructor-arg>
         <constructor-arg value="vanil"></constructor-arg>
     </bean>
+    -->
 
-    <bean id="iceCream1" class="com.tomashchuk.main.IceCream">
+    <bean id="iceCream1" class="com.tomashchuk.main.Product">
         <property name="title" value="IceCream"></property>
         <property name="details" value="strawberry"></property>
+        <property name="price" value="12"></property>
     </bean>
-    <bean id="iceCream2" class="com.tomashchuk.main.IceCream">
+    <bean id="iceCream2" class="com.tomashchuk.main.Product">
         <property name="title" value="Brownie"></property>
         <property name="details" value="custard"></property>
+        <property name="price" value="13"></property>
     </bean>
 
+<!--
     <bean id="IceCream_seller" class="com.tomashchuk.main.IceCreamSeller">
         <property name="iceCream">
             <list>
@@ -33,6 +41,17 @@
                 <ref bean="iceCream2" />
             </list>
         </property>
+    </bean>
+
+-->
+    <bean id="iceCream" class="com.tomashchuk.main.Product">
+        <property name="title" value="IceCream"></property>
+        <property name="details" value="strawberry"></property>
+        <property name="price" value="12"></property>
+    </bean>
+
+    <bean id = "iceCrm" class="com.tomashchuk.main.IceCream">
+        <property name="price" value="15"/>
     </bean>
 
 

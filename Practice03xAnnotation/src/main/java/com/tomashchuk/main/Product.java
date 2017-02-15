@@ -1,5 +1,7 @@
 package com.tomashchuk.main;
 
+import org.springframework.beans.factory.annotation.Required;
+
 /**
  * @author Vadym Tomashchuk
  *
@@ -7,6 +9,7 @@ package com.tomashchuk.main;
 public class Product {
 	private String title;
 	private String details;
+	private int price;
 	
 	Product (){
 	}
@@ -31,9 +34,19 @@ public class Product {
 	public String getDetails (){
 		return details;
 	}
-	
+
+	@Required
+	public void setPrice(int prc){
+		this.price = prc;
+	}
+
+	public int getPrice(){
+		return price;
+	}
+
+	@Override
 	public String toString (){
-		return title + " (" + details +").";
+		return title + " (" + details +"); Price: "+price;
 		
 	}
 }
