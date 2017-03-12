@@ -47,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tomashchuk/main/Teacher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -123,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/tomashchuk/main/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            <state relative-caret-position="235">
+              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,12 +186,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/dao/StudentsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/main/WorkWithStudents.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/dao/TeachersDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/main/App.java" />
         <option value="$PROJECT_DIR$/src/recources/SpringBeans.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/dao/HibernateTeacherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/main/WorkWithTeacher.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/main/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tomashchuk/main/App.java" />
       </list>
     </option>
   </component>
@@ -768,15 +768,15 @@
       <option name="presentableId" value="Default" />
       <updated>1488364632064</updated>
       <workItem from="1488364645788" duration="1239000" />
-      <workItem from="1489329805397" duration="18208000" />
+      <workItem from="1489329805397" duration="18586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19447000" />
+    <option name="totallyTimeSpent" value="19825000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -929,16 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tomashchuk/main/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tomashchuk/dao/TeachersDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -951,14 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tomashchuk/main/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1027,6 +1009,24 @@
             <element signature="e#1107#1108#0" expanded="true" />
             <element signature="e#1157#1158#0" expanded="true" />
             <element signature="e#1199#1200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tomashchuk/main/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tomashchuk/main/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

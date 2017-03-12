@@ -15,11 +15,10 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringBeans.xml");
         WorkWithStudents worker = (WorkWithStudents) context.getBean("worker");
-/*
+
         Student testStudent = new Student("Petka Stalin",5);
         worker.saveStudentsToDb(testStudent);
         worker.getFromDb(1);
-*/
 
         WorkWithTeacher teacherWorker = (WorkWithTeacher) context.getBean("teacherWorker");
         Teacher teacher = new Teacher();
