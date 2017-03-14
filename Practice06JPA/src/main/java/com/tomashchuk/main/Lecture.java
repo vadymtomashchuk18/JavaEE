@@ -41,7 +41,7 @@ public class Lecture {
 
     @Override
     public String toString(){
-        return "id:" + id + ", name: " + name + ", credits" + credits;
+        return "id:" + id + ", name: " + name + ", credits: " + credits;
     }
 
 }
