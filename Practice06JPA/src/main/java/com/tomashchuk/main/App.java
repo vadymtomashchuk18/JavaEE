@@ -1,5 +1,6 @@
 package com.tomashchuk.main;
 
+import com.tomashchuk.Entities.Lecture;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

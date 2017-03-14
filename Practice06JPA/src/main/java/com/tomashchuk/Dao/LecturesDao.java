@@ -1,6 +1,6 @@
 package com.tomashchuk.Dao;
 
-import com.tomashchuk.main.Lecture;
+import com.tomashchuk.Entities.Lecture;
 
 /**
  * Created by Вадим on 13.03.2017.

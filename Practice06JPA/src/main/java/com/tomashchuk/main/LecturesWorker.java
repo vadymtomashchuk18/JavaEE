@@ -1,6 +1,7 @@
 package com.tomashchuk.main;
 
 import com.tomashchuk.Dao.LecturesDao;
+import com.tomashchuk.Entities.Lecture;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

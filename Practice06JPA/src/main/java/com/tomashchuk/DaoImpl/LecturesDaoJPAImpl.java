@@ -1,7 +1,7 @@
 package com.tomashchuk.DaoImpl;
 
 import com.tomashchuk.Dao.LecturesDao;
-import com.tomashchuk.main.Lecture;
+import com.tomashchuk.Entities.Lecture;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

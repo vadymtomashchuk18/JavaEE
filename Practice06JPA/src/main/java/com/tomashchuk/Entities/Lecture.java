@@ -1,4 +1,4 @@
-package com.tomashchuk.main;
+package com.tomashchuk.Entities;
 
 /**
  * Created by Вадим on 13.03.2017.
