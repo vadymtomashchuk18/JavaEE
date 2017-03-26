@@ -1,5 +1,6 @@
 package com.tomashchuk.dao;
 
+import com.googlecode.ehcache.annotations.Cacheable;
 import com.tomashchuk.main.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.simple.ParameterizedRowMapper;
@@ -27,17 +28,16 @@ public class JdbcStudentDao implements StudentsDao {
                 student.getCourse());
     }
 
-    public Student getStudentById(int id) {
+    @Cacheable(cacheName = "studentsCache")
+    public Student getStudentById(int id){
         return jdbcTemplate.queryForObject(SQL_SELECT_STUDENT_BY_ID,
                 new ParameterizedRowMapper<Student>() {
-                    public Student mapRow(ResultSet rs, int rowNum) throws SQLException {
+                    public Student mapRow(ResultSet rs, int rowNum) throws SQLException{
                         Student student = new Student();
                         student.setStudentId(rs.getInt(1));
                         student.setPib(rs.getString(2));
                         student.setCourse(rs.getInt(3));
                         return student;
                     }
-                }, id);
-
-    }
-}
+                },id);
+    }}

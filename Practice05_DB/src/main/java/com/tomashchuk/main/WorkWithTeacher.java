@@ -4,6 +4,8 @@ import com.tomashchuk.dao.TeachersDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by Вадим on 12.03.2017.
  */
@@ -26,5 +28,9 @@ public class WorkWithTeacher {
     public void saveTeacher(Teacher teacher){
         teachersDao.saveTeacher(teacher);
         System.out.println("Saved teacher: "+teacher);
+    }
+
+    public List<Teacher> getTeacherByName(String name){
+        return teachersDao.getTeacherByName(name);
     }
 }

@@ -43,6 +43,26 @@ public class Student {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (studentId != student.studentId) return false;
+        if (course != student.course) return false;
+        return pib != null ? pib.equals(student.pib) : student.pib == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = studentId;
+        result = 31 * result + (pib != null ? pib.hashCode() : 0);
+        result = 31 * result + course;
+        return result;
+    }
+
+    @Override
     public String toString (){
         return studentId + ", " + pib + " , course: " + course;
     }

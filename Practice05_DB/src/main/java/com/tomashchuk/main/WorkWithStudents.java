@@ -22,4 +22,9 @@ public class WorkWithStudents {
         studentsDao.getStudentById(id);
         System.out.println("Getting student: id:"+id+", "+studentsDao.getStudentById(id).getPib() + ", course "+ studentsDao.getStudentById(id).getCourse());
     }
+
+    public Student getStudentFromDbById(int id){
+        Student st = (Student) studentsDao.getStudentById(id);
+        return st;
+    }
 }

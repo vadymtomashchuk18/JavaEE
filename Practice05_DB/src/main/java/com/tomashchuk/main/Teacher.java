@@ -8,6 +8,8 @@ import java.util.Date;
  */
 @Entity
 @Table(name="TEACHERS")
+@NamedQuery(query = "Select t from Teacher t where t.teacherId = :id",
+        name = "find teacher by id")
 public class Teacher {
     @Id
     @GeneratedValue
