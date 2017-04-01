@@ -1,6 +1,8 @@
 package com.tomashchuk.main;
 
 import com.tomashchuk.Entities.Lecture;
+import com.tomashchuk.Entities.Teacher;
+import com.tomashchuk.Entities.Worker;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -19,5 +21,12 @@ public class App
         LecturesWorker worker = (LecturesWorker)context.getBean("worker");
         worker.addLecture(lecture);
 */
+        Worker worker = (Worker)context.getBean("worker");
+        Teacher teacher = worker.getTeacher(1);
+        teacher.setFirstname("Koresh");
+        worker.saveTeacher(teacher);
+        Lecture l = worker.getLecture(1);
+        l.setName("Kkarina");
+        worker.saveLecture(l);
     }
 }
